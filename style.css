@@ -1,0 +1,538 @@
+body {
+  margin: 0;
+  background-color: #171717;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+nav {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  background-color: red;
+  height: 90px;
+}
+nav img {
+  width: 160px;
+  height: 160px;
+  vertical-align: -115px;
+  position: relative;
+  z-index: 2;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+nav ul li {
+  display: inline;
+  padding-right: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+nav .time {
+  background-color: #171717;
+  color: #fff;
+  text-align: right;
+  padding-right: 250px;
+  font-size: 14px;
+  margin-top: -84px;
+  height: 25px;
+  position: relative;
+  z-index: 1;
+}
+nav .time p {
+  margin: 0;
+  display: inline-block;
+  padding: 2px 0px 0px 15px;
+}
+nav .time .bold {
+  font-weight: bold;
+}
+nav .time img {
+  margin: 0;
+  height: 14px;
+  width: 14px;
+  vertical-align: middle;
+}
+
+.slider img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+  z-index: 0;
+}
+
+.dry-aged {
+  display: flex;
+  align-items: center;
+  height: 450px;
+  color: #fff;
+}
+.dry-aged .ostalo {
+  width: 50%;
+  margin-top: 200px;
+}
+.dry-aged .ostalo2 {
+  width: 500px;
+  margin-left: 200px;
+}
+.dry-aged .ostalo2 h3 {
+  margin-top: -20px;
+}
+.dry-aged .ostalo2 p {
+  width: 420px;
+}
+.dry-aged .ostalo2 button {
+  background-color: red;
+  color: #fff;
+  width: 170px;
+  height: 50px;
+  border-radius: 25px;
+  margin: 45px 10px 0px 0px;
+  border: 1px solid white;
+}
+.dry-aged .dry-aged-img {
+  width: 50%;
+  margin-top: 150px;
+}
+.dry-aged .dry-aged-img .slike {
+  width: 504px;
+}
+.dry-aged .dry-aged-img .slike #cetvrta {
+  width: 100%;
+  height: auto;
+}
+.dry-aged .dry-aged-img .slike #prva,
+.dry-aged .dry-aged-img .slike #druga {
+  width: 160px;
+  height: 120px;
+  padding: 7px 8px 0px 0px;
+}
+.dry-aged .dry-aged-img .slike #treca {
+  width: 160px;
+  height: 120px;
+}
+
+.buchen {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  color: #fff;
+  text-align: left;
+  background-color: red;
+  display: flex;
+  margin-top: 150px;
+}
+.buchen .lista {
+  flex: 1;
+}
+.buchen .lista .list1 {
+  padding: 100px 0px 0px 300px;
+}
+.buchen ul {
+  padding-left: 20px;
+  width: 420px;
+}
+.buchen button {
+  background-color: #fff;
+  color: black;
+  width: 170px;
+  height: 50px;
+  border-radius: 25px;
+  margin: 45px 10px 0px 0px;
+  border: 0;
+}
+.buchen .dry-aged-img {
+  flex: 1;
+  width: 50%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.buchen .dry-aged-img #buchen-img {
+  width: 800px;
+  height: 500px;
+}
+
+.handwerk {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 100px 0px 0px 0px;
+  color: #fff;
+  text-align: center;
+  width: 650px;
+}
+.handwerk button {
+  background-color: red;
+  color: #fff;
+  width: 170px;
+  height: 50px;
+  border-radius: 25px;
+  margin: 45px 10px 0px 0px;
+  border: 1px solid white;
+}
+
+.group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0px 0px 0px;
+  color: #fff;
+  width: 100%;
+}
+.group .levi-hr {
+  margin: 0px 10px 0px 0px;
+  width: 430px;
+  border-color: #252525;
+}
+.group .desni-hr {
+  margin: 0px 0px 0px 10px;
+  width: 430px;
+  border-color: #252525;
+}
+
+.photos {
+  text-align: center;
+}
+.photos img {
+  padding: 30px 6px 170px 5px;
+  width: 230px;
+  height: 220px;
+}
+
+.spices {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  color: #fff;
+  text-align: left;
+  background-color: red;
+  display: flex;
+}
+.spices .dry-aged-img {
+  flex: 1;
+  width: 50%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.spices .lista {
+  flex: 1;
+}
+.spices .lista .list1 {
+  padding: 100px 0px 0px 120px;
+}
+.spices .lista .list1 h3 {
+  margin-top: -15px;
+}
+.spices .lista .list1 p {
+  width: 400px;
+}
+
+.rellax {
+  background-image: url("photos/parallax.png");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.rellax p {
+  font-weight: bold;
+  font-size: 35px;
+  color: #fff;
+  padding: 150px 0px 0px 0px;
+  margin: 0;
+}
+.rellax button {
+  background-color: #fff;
+  border: 1px solid red;
+  width: 160px;
+  height: 40px;
+  border-radius: 25px;
+  margin: 25px 0px 0px 0px;
+}
+
+.metzgerei {
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+.metzgerei .logo {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex: 1;
+  align-items: flex-end;
+}
+.metzgerei .text {
+  font-weight: bold;
+  font-size: 30px;
+  color: #fff;
+  margin: 0;
+  flex: 1;
+  justify-content: center;
+  align-items: flex-end;
+}
+.metzgerei .text p {
+  width: 350px;
+  padding-left: 150px;
+  text-align: left;
+}
+.metzgerei .text button {
+  background-color: red;
+  color: #fff;
+  width: 160px;
+  height: 45px;
+  border-radius: 25px;
+  margin-left: 150px;
+  border: 1px solid white;
+}
+
+.group2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0px 0px 0px;
+  color: #fff;
+  width: 100%;
+}
+.group2 .levi-hr {
+  margin: 0px 10px 0px 0px;
+  width: 430px;
+  border-color: #252525;
+}
+.group2 .desni-hr {
+  margin: 0px 0px 0px 10px;
+  width: 430px;
+  border-color: #252525;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+.prices img {
+  padding: 0px 40px 0px 40px;
+}
+.prices .img1 {
+  width: 170px;
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+}
+.prices .ausgezeichneter {
+  font-weight: bold;
+  font-size: 30px;
+  color: #fff;
+  margin: 0;
+}
+
+.group3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  width: 100%;
+}
+.group3 .levi-hr {
+  margin: 0px 10px 0px 0px;
+  width: 430px;
+  border-color: #252525;
+}
+.group3 .desni-hr {
+  margin: 0px 0px 0px 10px;
+  width: 430px;
+  border-color: #252525;
+}
+
+.empf {
+  margin: 0;
+  padding-top: 50px;
+  color: #6b6a6a;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+.leute {
+  font-weight: bold;
+  font-size: 32px;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.comments {
+  height: 420px;
+  margin: 0;
+  justify-content: center;
+  display: flex;
+  padding-top: 60px;
+}
+.comments .comment1 {
+  text-align: center;
+  width: 360px;
+  height: 380px;
+  background-color: #3b3b3b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.comments .comment1 .grillkurs {
+  margin-top: 40px;
+}
+.comments .comment1 .stars {
+  margin-top: 10px;
+}
+.comments .comment1 p {
+  margin-top: 25px;
+  color: #fff;
+  width: 320px;
+}
+.comments .comment1 .znak {
+  margin-left: 280px;
+  margin-top: 85px;
+}
+.comments .comment2 {
+  width: 320px;
+  height: 260px;
+  background-color: #282828;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.comments .comment2 p {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #fff;
+  width: 270px;
+  font-size: 14px;
+}
+.comments .comment3 {
+  width: 320px;
+  height: 260px;
+  background-color: #282828;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.comments .comment3 p {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #fff;
+  width: 270px;
+  font-size: 14px;
+}
+
+.alle {
+  margin: 80px auto 50px auto;
+  background-color: red;
+  color: #fff;
+  width: 160px;
+  height: 45px;
+  border-radius: 25px;
+  border: 1px solid white;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  height: 120px;
+  background-color: red;
+}
+.footer .logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .logo .logo-img {
+  width: 100px;
+  height: 100px;
+}
+.footer .info-glavni {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  text-align: center;
+}
+.footer .info-glavni .info {
+  display: flex;
+  flex-direction: column;
+}
+.footer .info-glavni .info .fa-map-pin {
+  color: #fff;
+  margin-right: 5px;
+  font-size: 13px;
+  padding-bottom: 3px;
+}
+.footer .info-glavni .info .fa-phone,
+.footer .info-glavni .info .fa-envelope {
+  padding-top: 15px;
+  color: #fff;
+  margin-right: 5px;
+  font-size: 13px;
+}
+.footer .info-glavni .infoo {
+  text-align: left;
+}
+.footer .info-glavni .infoo .fa-map-pin {
+  color: #fff;
+  margin-right: 5px;
+  font-size: 13px;
+  padding-bottom: 10px;
+}
+.footer .info-glavni .infoo .fa-phone,
+.footer .info-glavni .infoo .fa-envelope {
+  padding-top: 10px;
+  color: #fff;
+  margin-right: 5px;
+  font-size: 13px;
+}
+.footer .info-glavni .infoo p {
+  width: 120px;
+  color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: normal;
+  font-size: 10px;
+}
+.footer .social-media {
+  flex: 1;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.footer .social-media i {
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
