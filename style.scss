@@ -1,21 +1,38 @@
 $font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 $font-size: 16px;
-$bg-color-crv: red;
-$bg-color: #171717;
+$bg-color-crv: #B50014;
+$bg-color: #000000f0;
+
 
 body {
+    padding: 0;
     margin: 0;
     background-color: $bg-color;
     font-family: $font-family;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: $bg-color;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#252525, #ff0000, #ff0000, #252525);
+    border-radius: 10px;
 }
 
 nav {
     font-family: $font-family;
     font-size: $font-size;
     background-color: $bg-color-crv;
-    height: 90px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 
-    img {
+    .logo {
         width: 160px;
         height: 160px;
         vertical-align: -115px;
@@ -23,11 +40,20 @@ nav {
         z-index: 2;
     }
 
+    .pdf {
+        vertical-align: -7px;
+    }
+
     ul {
         list-style: none;
         margin: 0;
         padding: 0;
         text-align: center;
+
+        #toggler,
+        label {
+            display: none;
+        }
 
         li {
             display: inline;
@@ -43,65 +69,127 @@ nav {
     .time {
         background-color: $bg-color;
         color: #fff;
-        text-align: right;
-        padding-right: 250px;
+        text-align: left;
         font-size: 14px;
         margin-top: -84px;
-        height: 25px;
         position: relative;
         z-index: 1;
+        display: flex;
+        justify-content: right;
+        vertical-align: middle;
 
-        p {
-            margin: 0;
-            display: inline-block;
-            padding: 2px 0px 0px 15px;
-        }
+        .time-p {
+            text-align: right;
+            margin: auto;
+            min-width: 1020px;
 
-        .bold {
-            font-weight: bold;
-        }
+            p {
+                margin: 0;
+                display: inline-block;
+                padding: 2px;
+            }
 
-        img {
-            margin: 0;
-            height: 14px;
-            width: 14px;
-            vertical-align: middle;
+            .bold {
+                font-weight: bold;
+                padding-left: 3px;
+            }
+
+            img {
+                margin: 0;
+                height: 14px;
+                width: 14px;
+                vertical-align: middle;
+
+            }
         }
     }
 }
 
 .slider {
+    .swiper {
+        position: relative;
+
+        .swiper-slide {
+            text-align: center;
+        }
+
+        // nece da radi ovde pa sam stavio inline css u html-u
+        /*.swiper-pagination {
+            color: #fff;
+        }*/
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            position: absolute;
+            margin: 220px 650px 0px 650px;
+
+            color: #fff;
+        }
+
+    }
+
+    .info-slider {
+        position: absolute;
+        z-index: 1;
+        width: 480px;
+        height: 280px;
+        bottom: 35%;
+        left: 0;
+        background-color: #17171773;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+
+        .sliderr {
+
+            padding-right: 30px;
+            width: 220px;
+            padding-bottom: 20px;
+
+            .naslov {
+                font-weight: bold;
+                font-size: 28px;
+            }
+
+            .opis-naslov {
+                color: #cecbcb;
+                font-size: 14px;
+            }
+        }
+    }
 
     img {
+        z-index: 0;
         position: relative;
         width: 100%;
         height: 100%;
-        padding-top: 10px;
-        z-index: 0;
+
     }
 }
+
 
 .dry-aged {
     display: flex;
     align-items: center;
-    height: 450px;
     color: #fff;
 
     .ostalo {
         width: 50%;
-        margin-top: 200px;
+        padding-top: 160px;
+        display: flex;
+        justify-content: center;
     }
 
     .ostalo2 {
-        width: 500px;
-        margin-left: 200px;
+        max-width: 400px;
 
         h3 {
             margin-top: -20px;
         }
 
         p {
-            width: 420px;
+            max-width: 400px;
         }
 
         button {
@@ -118,29 +206,35 @@ nav {
     .dry-aged-img {
         width: 50%;
         margin-top: 150px;
+        display: flex;
+        justify-content: left;
 
         .slike {
-            width: 504px;
-
             #cetvrta {
                 width: 100%;
-                height: auto;
+                max-height: 400px;
             }
 
-            #prva,
-            #druga {
-                width: 160px;
-                height: 120px;
-                padding: 7px 8px 0px 0px;
-            }
+            .slikee {
+                display: flex;
+                max-height: 150px;
 
-            #treca {
-                width: 160px;
-                height: 120px;
+                #prva,
+                #druga {
+                    padding: 5px 7px 0px 0px;
+                    flex: 1;
+                    width: 30%;
+                    height: auto;
+                }
 
+                #treca {
+                    padding: 5px 0px 0px 0px;
+                    flex: 1;
+                    width: 30%;
+                    height: auto;
+                }
             }
         }
-
     }
 }
 
@@ -156,15 +250,15 @@ nav {
 
     .lista {
         flex: 1;
-
-        .list1 {
-            padding: 100px 0px 0px 300px;
-        }
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     ul {
         padding-left: 20px;
-        width: 420px;
+        max-width: 200px;
     }
 
     button {
@@ -182,10 +276,9 @@ nav {
         width: 50%;
         padding: 0;
         margin: 0;
-        overflow: hidden;
 
         #buchen-img {
-            width: 800px;
+            width: 100%;
             height: 500px;
         }
     }
@@ -257,20 +350,37 @@ nav {
         padding: 0;
         margin: 0;
         overflow: hidden;
+
+        img {
+            flex: 1;
+            width: 100%;
+            height: 100%;
+        }
     }
 
     .lista {
         flex: 1;
+        display: flex;
+        justify-content: left;
+        align-items: center;
 
         .list1 {
-            padding: 100px 0px 0px 120px;
+            padding-left: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+
+            h2 {
+                max-width: 400px;
+            }
 
             h3 {
+                max-width: 400px;
                 margin-top: -15px;
             }
 
             p {
-                width: 400px;
+                max-width: 400px;
             }
         }
     }
@@ -278,28 +388,36 @@ nav {
 
 .rellax {
     background-image: url("photos/parallax.png");
-    min-height: 500px;
+    min-height: 540px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 
-    p {
-        font-weight: bold;
-        font-size: 35px;
-        color: #fff;
-        padding: 150px 0px 0px 0px;
-        margin: 0;
-    }
+    .rellax2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 193px;
 
-    button {
-        background-color: #fff;
-        border: 1px solid red;
-        width: 160px;
-        height: 40px;
-        border-radius: 25px;
-        margin: 25px 0px 0px 0px;
+        p {
+            padding: 0;
+            margin: 0;
+            font-weight: bold;
+            font-size: 35px;
+            color: #fff;
+        }
+
+        button {
+            background-color: #fff;
+            border: 1px solid red;
+            width: 160px;
+            height: 40px;
+            border-radius: 25px;
+            margin-top: 40px;
+        }
     }
 }
 
@@ -308,41 +426,58 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
 
-    .logo {
+    .logotext {
+        max-width: 100%;
+
+        flex: 1;
         display: flex;
-        text-align: center;
         justify-content: center;
-        flex: 1;
-        align-items: flex-end;
-    }
+        align-items: center;
 
-    .text {
-        font-weight: bold;
-        font-size: 30px;
-        color: #fff;
-        margin: 0;
-        flex: 1;
-        justify-content: center;
-        align-items: flex-end;
+        .logo {
+            flex: 1;
+            padding-top: 127px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-        p {
-            width: 350px;
-            padding-left: 150px;
-            text-align: left;
+            img {
+                max-width: 100%;
+            }
         }
 
-        button {
-            background-color: $bg-color-crv;
+        .text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-weight: bold;
+            font-size: 30px;
             color: #fff;
-            width: 160px;
-            height: 45px;
-            border-radius: 25px;
-            margin-left: 150px;
-            border: 1px solid white;
+            margin: 0;
+            flex: 1;
+
+            p {
+                margin: 0;
+                padding-top: 167px;
+                text-align: left;
+            }
+
+            .butoni {
+                button {
+                    background-color: $bg-color-crv;
+                    color: #fff;
+                    width: 160px;
+                    height: 45px;
+                    border-radius: 25px;
+                    border: 1px solid white;
+
+                }
+            }
         }
     }
+
 }
 
 .group2 {
@@ -352,7 +487,7 @@ nav {
     justify-content: center;
     padding: 100px 0px 0px 0px;
     color: #fff;
-    width: 100%;
+    max-width: 100%;
 
     .levi-hr {
         margin: 0px 10px 0px 0px;
@@ -367,21 +502,36 @@ nav {
     }
 }
 
-.prices {
+.allprices {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 400px;
+    margin: 100px 0px;
 
-    img {
-        padding: 0px 40px 0px 40px;
-    }
-
-    .img1 {
-        width: 170px;
-        text-align: center;
+    .prices {
+        width: 100%;
         display: flex;
-        align-items: flex-end;
+        align-items: center;
+        justify-content: center;
+
+        .nagrada1,
+        .nagrada2,
+        .nagrada3,
+        .nagrada4 {
+            text-align: center;
+            padding-left: 20px;
+
+            img {
+                max-width: 100%;
+            }
+
+            p {
+                color: #6b6a6a;
+                font-size: 12px;
+                max-width: 125px;
+            }
+        }
     }
 
     .ausgezeichneter {
@@ -389,8 +539,10 @@ nav {
         font-size: 30px;
         color: #fff;
         margin: 0;
+        padding-right: 20px;
     }
 }
+
 
 .group3 {
     display: flex;
@@ -433,44 +585,51 @@ nav {
 
 .comments {
     height: 420px;
-    margin: 0;
     justify-content: center;
     display: flex;
     padding-top: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
 
     .comment1 {
+        flex: 1;
         text-align: center;
-        width: 360px;
+        max-width: 360px;
         height: 380px;
         background-color: #3b3b3b;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         margin-top: auto;
         margin-bottom: auto;
 
         .grillkurs {
+            max-width: 100%;
             margin-top: 40px;
         }
 
         .stars {
+            max-width: 100%;
             margin-top: 10px;
         }
 
         p {
             margin-top: 25px;
             color: #fff;
-            width: 320px;
+            max-width: 320px;
         }
 
         .znak {
-            margin-left: 280px;
-            margin-top: 85px;
+            max-width: 100%;
+            margin-left: 250px;
+            margin-top: 95px;
         }
     }
 
     .comment2 {
-        width: 320px;
+        flex: 1;
+        max-width: 320px;
         height: 260px;
         background-color: #282828;
         display: flex;
@@ -486,13 +645,14 @@ nav {
             margin-top: auto;
             margin-bottom: auto;
             color: #fff;
-            width: 270px;
+            max-width: 270px;
             font-size: 14px;
         }
     }
 
     .comment3 {
-        width: 320px;
+        flex: 1;
+        max-width: 320px;
         height: 260px;
         background-color: #282828;
         display: flex;
@@ -508,7 +668,7 @@ nav {
             margin-top: auto;
             margin-bottom: auto;
             color: #fff;
-            width: 270px;
+            max-width: 270px;
             font-size: 14px;
         }
     }
@@ -549,20 +709,24 @@ nav {
         display: flex;
         align-items: center;
         flex: 1;
-        text-align: center;
+        justify-content: center;
+
         .info {
+
             display: flex;
             flex-direction: column;
+
             .fa-map-pin {
                 color: #fff;
                 margin-right: 5px;
                 font-size: 13px;
-                padding-bottom: 3px;
+                padding-bottom: 24px;
+                padding-top: 12px;
             }
 
             .fa-phone,
             .fa-envelope {
-                padding-top: 15px;
+                padding-bottom: 14px;
                 color: #fff;
                 margin-right: 5px;
                 font-size: 13px;
@@ -570,30 +734,14 @@ nav {
         }
 
         .infoo {
-            text-align: left;   
-            
-
-            .fa-map-pin {
-                color: #fff;
-                margin-right: 5px;
-                font-size: 13px;
-                padding-bottom: 10px;
-            }
-
-            .fa-phone,
-            .fa-envelope {
-                padding-top: 10px;
-                color: #fff;
-                margin-right: 5px;
-                font-size: 13px;
-            }
+            text-align: left;
 
             p {
-                width: 120px;
+                width: 130px;
                 color: #fff;
                 font-family: $font-family;
                 font-weight: normal;
-                font-size: 10px;
+                font-size: 11px;
             }
         }
     }
@@ -604,9 +752,204 @@ nav {
         display: flex;
         align-items: center;
 
+        p {
+            font-size: 14px;
+            padding-left: 15px;
+
+        }
+
         i {
-            padding-left: 10px;
-            font-size: 20px;
+            padding-left: 15px;
+            font-size: 21px;
+        }
+    }
+}
+
+.last-container {
+    background-color: #ff0000;
+    margin-top: -10px;
+
+    .last1 {
+        padding: 2px;
+        display: flex;
+        text-align: center;
+        background-color: #000000ab;
+
+        .first {
+            flex: 1;
+            margin: 0;
+            color: #999999;
+            font-size: 11px;
+            padding-right: 325px;
+        }
+
+        .second {
+            flex: 1;
+            margin: 0;
+            color: #999999;
+            font-size: 11px
+        }
+
+        .sec {
+            color: #b6b6b6;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    nav {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1050px) {
+    nav {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+
+    .slider {
+        .info-slider {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            position: relative;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #00000000;
+
+            .sliderr {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+
+                .naslov {
+                    font-size: 38px;
+                    margin: 0;
+                    text-align: center;
+                }
+
+                .opis-naslov {
+                    font-size: 16px;
+                    text-align: center;
+                    width: 385px;
+                }
+            }
+        }
+    }
+
+    .dry-aged {
+        display: flex;
+        flex-direction: column-reverse;
+
+        .ostalo {
+            width: 100%;
+            align-items: center;
+
+            padding: 0;
+
+            .ostalo2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+                h2 {
+                    font-size: 32px;
+                }
+
+                h3 {
+                    font-size: 22px;
+                }
+
+                p {
+
+                    width: 345px;
+                }
+
+                .buttons {
+                    display: flex;
+                    justify-content: center;
+
+                    button {
+                        width: 182px;
+                        height: 49px;
+                        margin-left: 0;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+
+        .dry-aged-img {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+
+            .slike {
+                #cetvrta {
+                    width: 100%;
+                    max-height: 400px;
+                }
+
+                .slikee {
+                    display: flex;
+                    max-height: 150px;
+
+                    #prva,
+                    #druga {
+                        padding: 5px 7px 0px 0px;
+                        flex: 1;
+                        width: 30%;
+                        height: auto;
+                    }
+
+                    #treca {
+                        padding: 5px 0px 0px 0px;
+                        flex: 1;
+                        width: 30%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    .allprices {
+        .prices {
+            display: flex;
+            flex-direction: column;
+
+            .ausgezeichneter {
+                padding: 0;
+            }
+
+            .nagrada1,
+            .nagrada2,
+            .nagrada3,
+            .nagrada4 {
+                text-align: center;
+                padding-left: 0px;
+
+                img {
+                    max-width: 100%;
+                }
+
+                p {
+                    color: #6b6a6a;
+                    font-size: 12px;
+                    max-width: 125px;
+                }
+            }
+
         }
     }
 }

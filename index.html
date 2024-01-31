@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Brath</title>
 </head>
 
 <body>
     <nav>
         <ul>
-            <li><img class="logo" src="c:\Users\filip\Downloads\logo.png"></li>
+            <li><img class="logo" src="photos/logo.png"></li>
             <li><a href="">Die Metzgerei</a></li>
             <li><a href="">Dry aged</a></li>
             <li><a href="">Fleischversand</a></li>
@@ -24,18 +25,48 @@
             <li><a href="">Tagesessen</a></li>
             <li><a href="">Impressum</a></li>
             <li><a href="">Kontakt</a></li>
-            <li><a href="">Download</a></li>
+            <li><a href=""><img class="pdf" src="photos/Frame.png">Download</a></li>
+            <label for="toggler"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" id="toggler">
+            
         </ul>
+    
         <div class="time">
-            <img src="c:\Users\filip\Downloads\clock.png">
-            <p class="bold">Opentime:</p>
-            <p>Di - Fr.: 07:00-13:00 und 15:00-18:30.</p>
-            <p>Sa.: 07:30 - 12:30</p>
+            <div class="time-p">
+                <img src="photos/clock.png">
+                <p class="bold">Opentime:</p>
+                <p>Di - Fr.: 07:00-13:00 und 15:00-18:30.</p>
+                <p>Sa.: 07:30 - 12:30</p>
+            </div>
         </div>
     </nav>
+
     <div class="slider">
-        <img src="c:\Users\filip\Downloads\image 14.png">
+        <div class="swiper">
+
+            <div class="swiper-wrapper">
+                <div data-hash="slide1" class="swiper-slide"><img src="photos/image 14.png" alt=""></div>
+                <div data-hash="slide2" class="swiper-slide"><img src="photos/image 14.png" alt=""></div>
+                <div data-hash="slide3" class="swiper-slide"><img src="photos/image 14.png" alt=""></div>
+                <div data-hash="slide4" class="swiper-slide"><img src="photos/image 14.png" alt=""></div>
+                <div data-hash="slide5" class="swiper-slide"><img src="photos/image 14.png" alt=""></div>
+                <div data-hash="slide6" class="swiper-slide"><img src="photos/image 14.png" alt=""></div>
+            </div>
+            <div class="swiper-pagination" style="--swiper-pagination-color: #fff"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+        <div class="info-slider">
+            <div class="sliderr">
+                <p class="naslov">Heiko Brath Metzgermeister</p>
+                <p class="opis-naslov">Deutsches Ipsum Dolor deserunt dissentias Grimms Märchen et. Tollit argumentum
+                    ius an. Pfannkuchen
+                    lobortis elaboraret per ne, nam Aperol Spritz probatus pertinax.</p>
+            </div>
+        </div>
     </div>
+
     <div class="dry-aged">
         <div class="ostalo">
             <div class="ostalo2">
@@ -68,10 +99,12 @@
         </div>
         <div class="dry-aged-img">
             <div class="slike">
-                <img src="C:\Users\filip\OneDrive\Dokumenti\VSCode\Desing2\photos\cetvrta.png" id="cetvrta">
-                <img src="C:\Users\filip\OneDrive\Dokumenti\VSCode\Desing2\photos\prva.png" id="prva">
-                <img src="C:\Users\filip\OneDrive\Dokumenti\VSCode\Desing2\photos\druga.png" id="druga">
-                <img src="C:\Users\filip\OneDrive\Dokumenti\VSCode\Desing2\photos\treca.png" id="treca">
+                <img src="photos\cetvrta.png" id="cetvrta">
+                <div class="slikee">
+                    <img src="photos\prva.png" id="prva">
+                    <img src="photos\druga.png" id="druga">
+                    <img src="photos\treca.png" id="treca">
+                </div>
             </div>
         </div>
     </div>
@@ -94,11 +127,11 @@
             </div>
         </div>
         <div class="dry-aged-img">
-            <img src="C:\Users\filip\OneDrive\Dokumenti\VSCode\Desing2\photos\buchen.jpg" id="buchen-img">
+            <img src="photos\buchen.jpg" id="buchen-img">
         </div>
     </div>
 
-    <div class="handwerk">
+    <!-- <div class="handwerk">
         <h2>
             Das Handwerk
         </h2>
@@ -116,10 +149,10 @@
         <button>
             Das Handwerk
         </button>
-    </div>
+    </div> -->
     <div class="group">
         <hr class="levi-hr">
-        <img src="c:\Users\filip\Downloads\Group.png">
+        <img src="photos/Group.png">
         <hr class="desni-hr">
     </div>
 
@@ -141,7 +174,7 @@
                 </h2>
                 <h3>Turnbeutel nostrud exercitation ullamco <br> Sprechen Sie deutsch</h3>
                 <p>
-                    <br> Odio principes iracundia Müller Rice pri. Ut vel solum mandamus, Kartoffelkopf natum
+                    Odio principes iracundia Müller Rice pri. Ut vel solum mandamus, Kartoffelkopf natum
                     adversarium ei
                     ius, diam Schmetterling honestatis eum. <br><br> Wiener Schnitzel amet, consectetur Handtasche elit,
                     sed do
@@ -154,38 +187,59 @@
     </div>
 
     <div class="rellax" data-rellax-speed="-3">
-        <p>Fleischversand</p>
-        <button>Jetzt bestellen</button>
+        <div class="rellax2">
+            <p>Fleischversand</p>
+            <button>Jetzt bestellen</button>
+        </div>
     </div>
 
     <div class="metzgerei">
-        <div class="logo">
-            <img src="photos/genussnetzlogo.png" alt="">
+        <div class="logotext">
+            <div class="logo">
+                <img src="photos/genussnetzlogo.png" alt="">
+            </div>
+            <div class="text">
+                <div class="butoni">
+                    <p>Metzgerei Brath ist Mitglied <br> im Genussnetzwerk</p>
+                    <br>
+
+                    <button>Gehen zu site</button>
+                </div>
+            </div>
         </div>
-        <div class="text">
-            <p>Metzgerei Brath ist Mitglied <br> im Genussnetzwerk</p>
-            <br>
-            <button>Gehen zu site</button>
-        </div>
+
     </div>
 
     <div class="group2">
         <hr class="levi-hr">
-        <img src="c:\Users\filip\Downloads\Group.png">
+        <img src="photos/Group.png">
         <hr class="desni-hr">
     </div>
-
-    <div class="prices">
-        <p class="ausgezeichneter">Auszeichnungen</p>
-        <img src="photos/nagrada1.png" alt="">
-        <img src="photos/nagrada2.png" alt="">
-        <img src="photos/nagrada3.png" alt="">
-        <img src="photos/nagrada4.png" alt="">
+    <div class="allprices">
+        <div class="prices">
+            <p class="ausgezeichneter">Auszeichnungen</p>
+            <div class="nagrada1">
+                <img src="photos/nagrada1.png" alt="">
+                <p>Tollit argumentum genau Saepe lobortis</p>
+            </div>
+            <div class="nagrada2">
+                <img src="photos/nagrada2.png" alt="">
+                <p>Schneewittchen <br> denique</p>
+            </div>
+            <div class="nagrada3">
+                <img src="photos/nagrada3.png" alt="">
+                <p>Grimms Märchen <br> expetenda</p>
+            </div>
+            <div class="nagrada4">
+                <img src="photos/nagrada4.png" alt="">
+                <p>Mettwurst mei <br> ullum gloriatur.</p>
+            </div>
+        </div>
     </div>
 
     <div class="group3">
         <hr class="levi-hr">
-        <img src="c:\Users\filip\Downloads\Group.png">
+        <img src="photos/Group.png">
         <hr class="desni-hr">
     </div>
 
@@ -236,7 +290,30 @@
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-youtube"></i>
         </div>
+
     </div>
+    <div class="last-container">
+        <div class="last1">
+            <p class="first">© 2020 by Metzgerei Heiko Brath GmbH, Deutschland</p>
+            <p class="second">Code and design by <a class="sec" href="https://www.studiopresent.rs/">StudioPresent</a>
+            </p>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            },
+        });
+    </script>
 </body>
 
 </html>
