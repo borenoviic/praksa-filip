@@ -15,6 +15,7 @@
 
 <body>
     <nav>
+        <label for="toggler"><i class="fa-solid fa-bars"></i></label>
         <ul>
             <li><img class="logo" src="photos/logo.png"></li>
             <li><a href="">Die Metzgerei</a></li>
@@ -26,11 +27,8 @@
             <li><a href="">Impressum</a></li>
             <li><a href="">Kontakt</a></li>
             <li><a href=""><img class="pdf" src="photos/Frame.png">Download</a></li>
-            <label for="toggler"><i class="fa-solid fa-bars"></i></label>
-            <input type="checkbox" id="toggler">
-            
         </ul>
-    
+
         <div class="time">
             <div class="time-p">
                 <img src="photos/clock.png">
@@ -43,18 +41,19 @@
 
     <div class="slider">
         <div class="swiper">
-
             <div class="swiper-wrapper">
                 <div data-hash="slide1" class="swiper-slide"><img src="photos/image 14.png" alt=""></div>
                 <div data-hash="slide2" class="swiper-slide"><img src="photos/image 14.png" alt=""></div>
                 <div data-hash="slide3" class="swiper-slide"><img src="photos/image 14.png" alt=""></div>
                 <div data-hash="slide4" class="swiper-slide"><img src="photos/image 14.png" alt=""></div>
                 <div data-hash="slide5" class="swiper-slide"><img src="photos/image 14.png" alt=""></div>
-                <div data-hash="slide6" class="swiper-slide"><img src="photos/image 14.png" alt=""></div>
             </div>
-            <div class="swiper-pagination" style="--swiper-pagination-color: #fff"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="slajdovi">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            
 
         </div>
         <div class="info-slider">
@@ -131,7 +130,7 @@
         </div>
     </div>
 
-    <!-- <div class="handwerk">
+    <div class="handwerk">
         <h2>
             Das Handwerk
         </h2>
@@ -149,7 +148,8 @@
         <button>
             Das Handwerk
         </button>
-    </div> -->
+    </div>
+
     <div class="group">
         <hr class="levi-hr">
         <img src="photos/Group.png">
@@ -157,10 +157,15 @@
     </div>
 
     <div class="photos">
-        <img src="photos/rind.png" alt="">
-        <img src="photos/schwein.png" alt="">
-        <img src="photos/hahnchen.png" alt="">
-        <img src="photos/wurstchen.png" alt="">
+        <div class="photos1">
+            <img src="photos/rind.png" alt="" class="schwein">
+            <img src="photos/schwein.png" alt="">
+        </div>
+        <div class="photos2">
+            <img src="photos/hahnchen.png" alt="" class="wurstchen">
+            <img src="photos/wurstchen.png" alt="">
+        </div>
+
     </div>
 
     <div class="spices">
@@ -215,25 +220,31 @@
         <img src="photos/Group.png">
         <hr class="desni-hr">
     </div>
+
     <div class="allprices">
+        <p class="ausgezeichneter">Auszeichnungen</p>
         <div class="prices">
-            <p class="ausgezeichneter">Auszeichnungen</p>
-            <div class="nagrada1">
-                <img src="photos/nagrada1.png" alt="">
-                <p>Tollit argumentum genau Saepe lobortis</p>
+            <div class="prices1">
+                <div class="nagrada1">
+                    <img src="photos/nagrada1.png" alt="">
+                    <p>Tollit argumentum genau Saepe lobortis</p>
+                </div>
+                <div class="nagrada2">
+                    <img src="photos/nagrada2.png" alt="">
+                    <p>Schneewittchen <br> denique</p>
+                </div>
             </div>
-            <div class="nagrada2">
-                <img src="photos/nagrada2.png" alt="">
-                <p>Schneewittchen <br> denique</p>
+            <div class="prices2">
+                <div class="nagrada3">
+                    <img src="photos/nagrada3.png" alt="">
+                    <p>Grimms Märchen <br> expetenda</p>
+                </div>
+                <div class="nagrada4">
+                    <img src="photos/nagrada4.png" alt="">
+                    <p>Mettwurst mei <br> ullum gloriatur.</p>
+                </div>
             </div>
-            <div class="nagrada3">
-                <img src="photos/nagrada3.png" alt="">
-                <p>Grimms Märchen <br> expetenda</p>
-            </div>
-            <div class="nagrada4">
-                <img src="photos/nagrada4.png" alt="">
-                <p>Mettwurst mei <br> ullum gloriatur.</p>
-            </div>
+
         </div>
     </div>
 
@@ -269,39 +280,52 @@
 
     <div class="footer">
         <div class="info-glavni">
-            <div class="info">
-                <i class="fa-solid fa-map-pin"></i>
-                <i class="fa-solid fa-phone"></i>
-                <i class="fa-solid fa-envelope"></i>
-            </div>
             <div class="infoo">
-                <p>Klauprechtstraße 25 <br> 76137 Karlsruhe, Germany</p>
-                <p>+49 721 358060</p>
-                <p>info@partyservice-brath.de</p>
+                <p class="fa-map-pin">Klauprechtstraße 25 <br> 76137 Karlsruhe, Germany</p>
+                <p class="fa-phone">+49 721 358060</p>
+                <p class="fa-envelope">info@partyservice-brath.de</p>
             </div>
         </div>
+
         <div class="logo">
             <img src="photos/logo.png" class="logo-img">
         </div>
         <div class="social-media">
             <p>Besuchen Sie uns auf:</p>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-youtube"></i>
+            <div class="icons">
+                <div class="tw">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="fb">
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="ig">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="yt">
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+            
+
         </div>
 
     </div>
     <div class="last-container">
         <div class="last1">
-            <p class="first">© 2020 by Metzgerei Heiko Brath GmbH, Deutschland</p>
-            <p class="second">Code and design by <a class="sec" href="https://www.studiopresent.rs/">StudioPresent</a>
-            </p>
+            <div class="lastt">
+                <div class="frst">
+                    <p class="first">© 2020 by Metzgerei Heiko Brath GmbH, Deutschland</p>
+                </div>
+                <div class="scnd">
+                    <p class="second">Code and design by <a class="sec" href="https://www.studiopresent.rs/">StudioPresent</a></p>
+                </div>
+            </div>
         </div>
-
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
             pagination: {
