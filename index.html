@@ -15,7 +15,7 @@
 
 <body>
     <nav>
-        <label for="toggler"><i class="fa-solid fa-bars"></i></label>
+        
         <ul>
             <li><img class="logo" src="photos/logo.png"></li>
             <li><a href="">Die Metzgerei</a></li>
@@ -26,8 +26,12 @@
             <li><a href="">Tagesessen</a></li>
             <li><a href="">Impressum</a></li>
             <li><a href="">Kontakt</a></li>
-            <li><a href=""><img class="pdf" src="photos/Frame.png">Download</a></li>
+            <li class="vidi"><a href=""><img class="pdf" src="photos/Frame.png">Download</a></li>
         </ul>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        
 
         <div class="time">
             <div class="time-p">
@@ -38,8 +42,20 @@
             </div>
         </div>
     </nav>
+    
+    
 
     <div class="slider">
+        <div class="drop_menu">
+        <li><a href="">Die Metzgerei</a></li>
+        <li><a href="">Dry aged</a></li>
+        <li><a href="">Fleischversand</a></li>
+        <li><a href="">Events/Kurse</a></li>
+        <li><a href="">Partyservice</a></li>
+        <li><a href="">Tagesessen</a></li>
+        <li><a href="">Impressum</a></li>
+        <li><a href="">Kontakt</a></li>
+    </div>
         <div class="swiper">
             <div class="swiper-wrapper">
                 <div data-hash="slide1" class="swiper-slide"><img src="photos/image 14.png" alt=""></div>
@@ -88,10 +104,10 @@
                 </p>
                 <div class="buttons">
                     <button>
-                        Dry aged
+                        <p>Dry aged</p>
                     </button>
                     <button>
-                        Alte Wurtz
+                        <p>Wurtz</p> 
                     </button>
                 </div>
             </div>
@@ -121,7 +137,7 @@
                     <li>lernen Sie die Kunst des Grillens</li>
                 </ul>
                 <button>
-                    Grillkurs
+                    <p>Grillkurs</p>
                 </button>
             </div>
         </div>
@@ -146,7 +162,7 @@
             nam an, his ei Reise euismod assentior
         </p>
         <button>
-            Das Handwerk
+            <p>Das Handwerk</p>
         </button>
     </div>
 
@@ -193,8 +209,10 @@
 
     <div class="rellax" data-rellax-speed="-3">
         <div class="rellax2">
-            <p>Fleischversand</p>
-            <button>Jetzt bestellen</button>
+            <p class="pp">Fleischversand</p>
+            <button>
+                <p class="ppp">Jetzt bestellen</p>
+            </button>
         </div>
     </div>
 
@@ -208,7 +226,9 @@
                     <p>Metzgerei Brath ist Mitglied <br> im Genussnetzwerk</p>
                     <br>
 
-                    <button>Gehen zu site</button>
+                    <button>
+                        <p>Gehen zu site</p>
+                    </button>
                 </div>
             </div>
         </div>
@@ -276,7 +296,9 @@
 
     </div>
 
-    <button class="alle">Alle Berichte</button>
+    <button class="alle">
+        <p>Alle Berichte</p>
+    </button>
 
     <div class="footer">
         <div class="info-glavni">
@@ -327,6 +349,15 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDown = document.querySelector('.drop_menu')
+
+        toggleBtn.onclick = function () {
+            dropDown.classList.toggle('open');
+
+        }
+
         const swiper = new Swiper('.swiper', {
             pagination: {
                 el: ".swiper-pagination",
@@ -337,6 +368,8 @@
                 prevEl: '.swiper-button-prev'
             },
         });
+
+
     </script>
 </body>
 
