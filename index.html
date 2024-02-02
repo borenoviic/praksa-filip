@@ -10,12 +10,24 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js" defer></script>
     <title>Brath</title>
 </head>
 
 <body>
-    <nav>
+
+    <div class="popup">
+        <div class="strane">
+            <button id="close">&times;</button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, quae cum cupiditate enim id perferendis
+            sed facere expedita voluptatibus nulla.</p>
+        </div>
         
+    </div>
+
+    <nav>
+
         <ul>
             <li><img class="logo" src="photos/logo.png"></li>
             <li><a href="">Die Metzgerei</a></li>
@@ -31,7 +43,7 @@
         <div class="toggle_btn">
             <i class="fa-solid fa-bars"></i>
         </div>
-        
+
 
         <div class="time">
             <div class="time-p">
@@ -42,21 +54,19 @@
             </div>
         </div>
     </nav>
-    
-    
 
     <div class="slider">
         <div class="drop_menu">
-        <li><a href="">Die Metzgerei</a></li>
-        <li><a href="">Dry aged</a></li>
-        <li><a href="">Fleischversand</a></li>
-        <li><a href="">Events/Kurse</a></li>
-        <li><a href="">Partyservice</a></li>
-        <li><a href="">Tagesessen</a></li>
-        <li><a href="">Impressum</a></li>
-        <li><a href="">Kontakt</a></li>
-    </div>
-        <div class="swiper">
+            <li><a href="">Die Metzgerei</a></li>
+            <li><a href="">Dry aged</a></li>
+            <li><a href="">Fleischversand</a></li>
+            <li><a href="">Events/Kurse</a></li>
+            <li><a href="">Partyservice</a></li>
+            <li><a href="">Tagesessen</a></li>
+            <li><a href="">Impressum</a></li>
+            <li><a href="">Kontakt</a></li>
+        </div>
+        <div class="swiper1">
             <div class="swiper-wrapper">
                 <div data-hash="slide1" class="swiper-slide"><img src="photos/image 14.png" alt=""></div>
                 <div data-hash="slide2" class="swiper-slide"><img src="photos/image 14.png" alt=""></div>
@@ -69,7 +79,7 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </div>
-            
+
 
         </div>
         <div class="info-slider">
@@ -107,7 +117,7 @@
                         <p>Dry aged</p>
                     </button>
                     <button>
-                        <p>Wurtz</p> 
+                        <p>Wurtz</p>
                     </button>
                 </div>
             </div>
@@ -274,26 +284,53 @@
         <hr class="desni-hr">
     </div>
 
-
     <p class="empf">Empfehlungs</p>
     <p class="leute">Was die Leute über uns sagen</p>
-    <div class="comments">
-        <div class="comment3">
-            <p>Achtung fur atine indoctum complectitur HugoClub Mate mea meliore denique nominavi id. Ohrwurm expetenda
-                nam an, his ei Reise euismod assentior.</p>
-        </div>
-        <div class="comment1">
-            <img src="photos/grillkurs.png" class="grillkurs">
-            <img src="photos/zvezdice.png" class="stars">
-            <p>Wiener Schnitzel amet, consectetur Handtasche elit, sed do eiusmod tempor Stuttgart ut labore et
-                dolore magna Luftballons Ut Turnbeutel nostrud exercitation ullamco .</p>
-            <img src="photos/znak.png" class="znak">
-        </div>
-        <div class="comment2">
-            <p>Achtung fur atine indoctum complectitur HugoClub Mate mea meliore denique nominavi id. Ohrwurm expetenda
-                nam an, his ei Reise euismod assentior.</p>
-        </div>
 
+    <div class="comments">
+        <div class="swiper2">
+            <div class="iznad">
+                <img src="photos/grillkurs.png" class="grillkurs">
+                <img src="photos/zvezdice.png" class="stars">
+            </div>
+            <div class="swiper-wrapper">
+                <div data-hash="slide1" class="swiper-slide">
+                    <div class="comment3">
+                        <p>Sprechen Sie deutsch aliquip ex ea commodo consequat. Wiener Schnitzel aute irure dolor in
+                            reprehenderit
+                            Guten Tag mollit anim Stuttgart.</p>
+                        <p class="comment_name2">Maria Kartofeln</p>
+                        <img src="photos/znak.png" class="znak">
+                    </div>
+                </div>
+                <div data-hash="slide2" class="swiper-slide">
+
+                    <div class="comment1">
+
+                        <p>Wiener Schnitzel amet, consectetur Handtasche elit, sed do eiusmod tempor Stuttgart ut labore
+                            et
+                            dolore magna Luftballons Ut Turnbeutel nostrud exercitation ullamco .</p>
+                        <p class="comment_name">Halling Tobias</p>
+                        <p class="comment_name2">Koch</p>
+                        <img src="photos/znak.png" class="znak">
+                    </div>
+                </div>
+                <div data-hash="slide3" class="swiper-slide">
+                    <div class="comment2">
+                        <p>Achtung fur atine indoctum complectitur HugoClub Mate mea meliore denique nominavi id.
+                            Ohrwurm expetenda
+                            nam an, his ei Reise euismod assentior.</p>
+                        <p class="comment_name2">Rene Weinstein</p>
+                        <img src="photos/znak.png" class="znak">
+                    </div>
+                </div>
+            </div>
+
+            <div class="slajdovi">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
     </div>
 
     <button class="alle">
@@ -328,7 +365,7 @@
                     <i class="fa-brands fa-youtube"></i>
                 </div>
             </div>
-            
+
 
         </div>
 
@@ -340,37 +377,15 @@
                     <p class="first">© 2020 by Metzgerei Heiko Brath GmbH, Deutschland</p>
                 </div>
                 <div class="scnd">
-                    <p class="second">Code and design by <a class="sec" href="https://www.studiopresent.rs/">StudioPresent</a></p>
+                    <p class="second">Code and design by <a class="sec"
+                            href="https://www.studiopresent.rs/">StudioPresent</a></p>
                 </div>
             </div>
         </div>
     </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        const toggleBtn = document.querySelector('.toggle_btn')
-        const toggleBtnIcon = document.querySelector('.toggle_btn i')
-        const dropDown = document.querySelector('.drop_menu')
 
-        toggleBtn.onclick = function () {
-            dropDown.classList.toggle('open');
-
-        }
-
-        const swiper = new Swiper('.swiper', {
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev'
-            },
-        });
-
-
-    </script>
 </body>
 
 </html>
