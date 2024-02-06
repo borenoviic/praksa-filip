@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.rellax {
+  background-image: url("photos/parallax.png");
+  min-height: 540px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.rellax .rellax2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 193px;
+}
+.rellax .rellax2 .pp {
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  font-size: 35px;
+}
+.rellax .rellax2 button {
+  background-color: #fff;
+  border: 1px solid red;
+  width: 160px;
+  height: 40px;
+  border-radius: 25px;
+  margin-top: 40px;
+  cursor: pointer;
+  color: #000;
+}
+.rellax .rellax2 button .ppp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.15s ease-in-out;
+}
+.rellax .rellax2 button .ppp:hover {
+  transform: scale(1.07);
+  transition: 0.15s ease-in-out;
+}
+
+@media (max-width: 920px) {
+  .rellax .rellax2 button p {
+    font-size: 13px;
+  }
+  .rellax .rellax2 p {
+    font-size: 25px;
+  }
+}

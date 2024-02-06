@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+$font-family: Roboto;
+$font-size: 16px;
+$bg-color-crv: #B50014;
+$bg-color: #000000f0;
+$bg-color-day: #fff;
+$text-color-day: #fff;
+$text-color-night: #000;
+
+body.night {
+    background-color: $bg-color-day;
+    color: #000;
+
+    .metzgerei {
+        .logotext {
+            .logo {
+                img {
+                    background-color: $bg-color;
+                }
+            }
+
+            .text {
+                .butoni {
+                    p {
+                        color: $text-color-night;
+                    }
+
+                    button {
+                        p {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.metzgerei {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logotext {
+        max-width: 100%;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .logo {
+            flex: 1;
+            padding-top: 127px;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            padding-right: 120px;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .text {
+            display: flex;
+            justify-content: left;
+            flex-direction: column;
+            font-weight: bold;
+            font-size: 30px;
+            margin: 0;
+            flex: 1;
+            padding-left: 120px;
+
+            p {
+                margin: 0;
+                padding-top: 167px;
+                text-align: left;
+            }
+
+            .butoni {
+                button {
+                    background-color: $bg-color-crv;
+                    width: 160px;
+                    height: 45px;
+                    border-radius: 25px;
+                    border: 1px solid white;
+                    cursor: pointer;
+
+                    p {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0;
+                        margin: 0;
+                        width: 100%;
+                        height: 100%;
+                        transition: 0.15s ease-in-out;
+                        color: #fff;
+
+                        &:hover {
+                            transform: scale(1.07);
+                            transition: 0.15s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 920px) {
+
+    .metzgerei {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+
+        .logotext {
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .logo {
+                flex: 1;
+                padding-top: 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            .text {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                font-weight: bold;
+                font-size: 30px;
+                color: $text-color-day;
+                margin: 0;
+                flex: 1;
+                padding: 100px 0px 0px 0px;
+
+                .butoni {
+                    display: flex;
+                    flex-direction: column;
+                    width: 250px;
+
+                    p {
+                        margin: 0;
+                        padding-top: 0px;
+                        text-align: center;
+                    }
+
+                    button {
+                        background-color: $bg-color-crv;
+                        color: $text-color-day;
+
+                        width: 160px;
+                        height: 45px;
+                        border-radius: 25px;
+                        border: 1px solid white;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+
+    .metzgerei {
+
+        .logotext {
+
+            .logo {
+
+                img {
+                    max-width: 60%;
+                }
+            }
+
+            .text {
+
+                .butoni {
+
+                    p {
+                        font-size: 22px;
+                        margin: 0;
+                        padding-top: 0px;
+                        text-align: center;
+                    }
+
+                    button {
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

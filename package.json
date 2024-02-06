@@ -1,8 +1,12 @@
 {
   "dependencies": {
     "aos": "^2.3.4",
-    "gulp": "^3.9.1",
+    "gulp-sass": "^5.1.0",
     "rellax": "^1.12.1",
+    "sass": "^1.70.0",
     "swiper": "^11.0.5"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
   }
 }

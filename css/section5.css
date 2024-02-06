@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body.night {
+  background-color: #fff;
+  color: #000;
+}
+body.night .group img {
+  background-color: rgba(0, 0, 0, 0.9411764706);
+}
+
+.group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0px 0px 0px;
+  width: 100%;
+}
+.group img {
+  border-radius: 50%;
+}
+.group .levi-hr {
+  margin: 0px 10px 0px 0px;
+  width: 470px;
+  border-color: #252525;
+}
+.group .desni-hr {
+  margin: 0px 0px 0px 10px;
+  width: 470px;
+  border-color: #252525;
+}
+
+.photos {
+  text-align: center;
+  display: flex;
+  padding-top: 40px;
+}
+.photos .photos1,
+.photos .photos2 {
+  flex: 1;
+}
+.photos .photos1 {
+  display: flex;
+  justify-content: right;
+}
+.photos .photos2 {
+  display: flex;
+  justify-content: left;
+}
+.photos img {
+  padding: 30px 10px 170px 5px;
+  width: 230px;
+  height: 220px;
+}
+
+@media (max-width: 980px) {
+  .group {
+    padding-top: 64px;
+  }
+  .photos {
+    transition: 0.5s ease-in-out;
+    text-align: center;
+    padding-top: 44px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .photos .photos1,
+  .photos .photos2 {
+    display: flex;
+    justify-content: center;
+  }
+  .photos .photos1 .schwein,
+  .photos .photos1 .wurstchen,
+  .photos .photos2 .schwein,
+  .photos .photos2 .wurstchen {
+    padding: 9px 9px 0px 0px;
+  }
+  .photos .photos2 {
+    padding-bottom: 80px;
+  }
+  .photos img {
+    padding: 9px 0px 0px 0px;
+    width: 230px;
+    height: 220px;
+  }
+}
+@media (max-width: 920px) {
+  .photos .photos1,
+  .photos .photos2 {
+    padding-bottom: 0px;
+  }
+}
+@media (max-width: 500px) {
+  .photos img {
+    max-width: 40%;
+    height: auto;
+  }
+}

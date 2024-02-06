@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+$font-family: Roboto;
+$font-size: 16px;
+$bg-color-crv: #B50014;
+$bg-color: #000000f0;
+$bg-color-day: #fff;
+$text-color-day: #fff;
+$text-color-night: #000;
+
+body.night {
+    background-color: $bg-color-day;
+    color: #000;
+
+    .group2,
+    .group3 {
+        img {
+            background-color: $bg-color;
+        }
+    }
+    .allprices {
+
+        .ausgezeichneter {
+            color: $text-color-night;
+        }
+
+    }
+}
+
+.group2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0px 0px 0px;
+    max-width: 100%;
+
+    img {
+        border-radius: 50%;
+    }
+
+    .levi-hr {
+        margin: 0px 10px 0px 0px;
+        width: 470px;
+        border-color: #252525;
+    }
+
+    .desni-hr {
+        margin: 0px 0px 0px 10px;
+        width: 470px;
+        border-color: #252525;
+    }
+}
+
+.allprices {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0px;
+
+    p {
+        display: flex;
+        color: #6b6a6a;
+        font-size: 12px;
+    }
+
+    .prices {
+        display: flex;
+
+        .prices1 {
+            width: 100%;
+            display: flex;
+
+            .nagrada1,
+            .nagrada2 {
+                text-align: center;
+                padding-left: 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 150px;
+                justify-content: center;
+
+                p {
+                    max-width: 150px;
+                }
+
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .prices2 {
+            display: flex;
+
+            .nagrada3,
+            .nagrada4 {
+                text-align: center;
+                padding-left: 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 150px;
+                justify-content: center;
+
+                p {
+                    max-width: 150px;
+                }
+
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    .ausgezeichneter {
+        color: $text-color-day;
+        font-weight: bold;
+        font-size: 30px;
+        margin: 0;
+        padding-right: 40px;
+    }
+}
+
+
+.group3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    img {
+        border-radius: 50%;
+    }
+
+    .levi-hr {
+        margin: 0px 10px 0px 0px;
+        width: 470px;
+        border-color: #252525;
+    }
+
+    .desni-hr {
+        margin: 0px 0px 0px 10px;
+        width: 470px;
+        border-color: #252525;
+    }
+}
+
+@media (max-width: 1050px) {
+
+    .allprices {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 68px 0px 100px 0px;
+
+        p {
+            display: flex;
+            color: #6b6a6a;
+            font-size: 12px;
+        }
+
+        .prices {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column-reverse;
+            width: 100%;
+            padding-top: 78px;
+
+            .prices1 {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                padding-top: 30px;
+
+                .nagrada1,
+                .nagrada2 {
+                    text-align: center;
+                    padding-left: 0px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 150px;
+                    justify-content: center;
+
+                    p {
+                        margin: 10px 0px 0px 0px;
+                        max-width: 150px;
+                    }
+
+                    img {
+                        max-width: 100%;
+                    }
+                }
+            }
+
+            .prices2 {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+
+                .nagrada3,
+                .nagrada4 {
+                    text-align: center;
+                    padding-left: 0px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 150px;
+                    justify-content: center;
+
+                    p {
+                        margin: 10px 0px 0px 0px;
+                        max-width: 150px;
+                    }
+
+                    img {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+
+        .ausgezeichneter {
+            font-weight: bold;
+            font-size: 30px;
+            color: $text-color-day;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+

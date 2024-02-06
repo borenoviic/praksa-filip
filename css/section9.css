@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body.night {
+  background-color: #fff;
+  color: #000;
+}
+body.night .group2 img,
+body.night .group3 img {
+  background-color: rgba(0, 0, 0, 0.9411764706);
+}
+body.night .allprices .ausgezeichneter {
+  color: #000;
+}
+
+.group2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0px 0px 0px;
+  max-width: 100%;
+}
+.group2 img {
+  border-radius: 50%;
+}
+.group2 .levi-hr {
+  margin: 0px 10px 0px 0px;
+  width: 470px;
+  border-color: #252525;
+}
+.group2 .desni-hr {
+  margin: 0px 0px 0px 10px;
+  width: 470px;
+  border-color: #252525;
+}
+
+.allprices {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0px;
+}
+.allprices p {
+  display: flex;
+  color: #6b6a6a;
+  font-size: 12px;
+}
+.allprices .prices {
+  display: flex;
+}
+.allprices .prices .prices1 {
+  width: 100%;
+  display: flex;
+}
+.allprices .prices .prices1 .nagrada1,
+.allprices .prices .prices1 .nagrada2 {
+  text-align: center;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  justify-content: center;
+}
+.allprices .prices .prices1 .nagrada1 p,
+.allprices .prices .prices1 .nagrada2 p {
+  max-width: 150px;
+}
+.allprices .prices .prices1 .nagrada1 img,
+.allprices .prices .prices1 .nagrada2 img {
+  max-width: 100%;
+}
+.allprices .prices .prices2 {
+  display: flex;
+}
+.allprices .prices .prices2 .nagrada3,
+.allprices .prices .prices2 .nagrada4 {
+  text-align: center;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  justify-content: center;
+}
+.allprices .prices .prices2 .nagrada3 p,
+.allprices .prices .prices2 .nagrada4 p {
+  max-width: 150px;
+}
+.allprices .prices .prices2 .nagrada3 img,
+.allprices .prices .prices2 .nagrada4 img {
+  max-width: 100%;
+}
+.allprices .ausgezeichneter {
+  color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0;
+  padding-right: 40px;
+}
+
+.group3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.group3 img {
+  border-radius: 50%;
+}
+.group3 .levi-hr {
+  margin: 0px 10px 0px 0px;
+  width: 470px;
+  border-color: #252525;
+}
+.group3 .desni-hr {
+  margin: 0px 0px 0px 10px;
+  width: 470px;
+  border-color: #252525;
+}
+
+@media (max-width: 1050px) {
+  .allprices {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 68px 0px 100px 0px;
+  }
+  .allprices p {
+    display: flex;
+    color: #6b6a6a;
+    font-size: 12px;
+  }
+  .allprices .prices {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    width: 100%;
+    padding-top: 78px;
+  }
+  .allprices .prices .prices1 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+  }
+  .allprices .prices .prices1 .nagrada1,
+  .allprices .prices .prices1 .nagrada2 {
+    text-align: center;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    justify-content: center;
+  }
+  .allprices .prices .prices1 .nagrada1 p,
+  .allprices .prices .prices1 .nagrada2 p {
+    margin: 10px 0px 0px 0px;
+    max-width: 150px;
+  }
+  .allprices .prices .prices1 .nagrada1 img,
+  .allprices .prices .prices1 .nagrada2 img {
+    max-width: 100%;
+  }
+  .allprices .prices .prices2 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .allprices .prices .prices2 .nagrada3,
+  .allprices .prices .prices2 .nagrada4 {
+    text-align: center;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    justify-content: center;
+  }
+  .allprices .prices .prices2 .nagrada3 p,
+  .allprices .prices .prices2 .nagrada4 p {
+    margin: 10px 0px 0px 0px;
+    max-width: 150px;
+  }
+  .allprices .prices .prices2 .nagrada3 img,
+  .allprices .prices .prices2 .nagrada4 img {
+    max-width: 100%;
+  }
+  .allprices .ausgezeichneter {
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+}

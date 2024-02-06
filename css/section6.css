@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.spices {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  text-align: left;
+  background-color: #B50014;
+  display: flex;
+}
+.spices .dry-aged-img {
+  flex: 1;
+  width: 50%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.spices .dry-aged-img img {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+.spices .lista {
+  flex: 1;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.spices .lista .list1 {
+  color: #fff;
+  padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.spices .lista .list1 h2 {
+  max-width: 400px;
+}
+.spices .lista .list1 h3 {
+  max-width: 400px;
+  margin-top: -15px;
+}
+.spices .lista .list1 p {
+  max-width: 400px;
+}
+
+@media (max-width: 920px) {
+  .spices {
+    position: relative;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    text-align: left;
+    background-color: #B50014;
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+    margin-top: 80px;
+  }
+  .spices .dry-aged-img {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    padding-top: 50px;
+  }
+  .spices .dry-aged-img img {
+    width: 100%;
+  }
+  .spices .lista {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .spices .lista .list1 {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .spices .lista .list1 h2 {
+    max-width: 230px;
+    font-size: 25px;
+  }
+  .spices .lista .list1 h3 {
+    max-width: 290px;
+    margin-top: 0px;
+    font-size: 17px;
+  }
+  .spices .lista .list1 p {
+    max-width: 70%;
+    font-size: 14px;
+  }
+}

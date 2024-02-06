@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+$font-family: Roboto;
+$font-size: 16px;
+$bg-color-crv: #B50014;
+$bg-color: #000000f0;
+$bg-color-day: #fff;
+$text-color-day: #fff;
+$text-color-night: #000;
+
+body.night {
+    background-color: $bg-color-day;
+    color: #000;
+
+    .group {
+        img {
+            background-color: $bg-color;
+        }
+    }
+}
+
+.group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0px 0px 0px;
+    width: 100%;
+
+    img {
+        border-radius: 50%;
+    }
+
+    .levi-hr {
+        margin: 0px 10px 0px 0px;
+        width: 470px;
+        border-color: #252525;
+    }
+
+    .desni-hr {
+        margin: 0px 0px 0px 10px;
+        width: 470px;
+        border-color: #252525;
+    }
+}
+
+.photos {
+    text-align: center;
+    display: flex;
+    padding-top: 40px;
+
+    .photos1,
+    .photos2 {
+        flex: 1;
+    }
+
+    .photos1 {
+        display: flex;
+        justify-content: right;
+    }
+
+    .photos2 {
+        display: flex;
+        justify-content: left;
+    }
+
+    img {
+        padding: 30px 10px 170px 5px;
+        width: 230px;
+        height: 220px;
+    }
+}
+
+@media (max-width: 980px) {
+
+    .group{
+        padding-top: 64px;
+    }
+
+    .photos {
+        transition: 0.5s ease-in-out;
+        text-align: center;
+        padding-top: 44px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .photos1,
+        .photos2 {
+
+            .schwein,
+            .wurstchen {
+                padding: 9px 9px 0px 0px;
+
+            }
+
+            display: flex;
+            justify-content: center;
+        }
+
+        .photos2 {
+            padding-bottom: 80px;
+        }
+
+        img {
+            padding: 9px 0px 0px 0px;
+            width: 230px;
+            height: 220px;
+        }
+    }
+}
+
+@media (max-width: 920px) {
+
+    .photos {
+
+        .photos1,
+        .photos2 {
+            padding-bottom: 0px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .photos {
+        img {
+            max-width: 40%;
+            height: auto;
+        }
+    }
+}

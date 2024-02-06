@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body.night {
+  background-color: #fff;
+  color: #000;
+}
+body.night .metzgerei .logotext .logo img {
+  background-color: rgba(0, 0, 0, 0.9411764706);
+}
+body.night .metzgerei .logotext .text .butoni p {
+  color: #000;
+}
+body.night .metzgerei .logotext .text .butoni button p {
+  color: #fff;
+}
+
+.metzgerei {
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.metzgerei .logotext {
+  max-width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.metzgerei .logotext .logo {
+  flex: 1;
+  padding-top: 127px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-right: 120px;
+}
+.metzgerei .logotext .logo img {
+  max-width: 100%;
+}
+.metzgerei .logotext .text {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0;
+  flex: 1;
+  padding-left: 120px;
+}
+.metzgerei .logotext .text p {
+  margin: 0;
+  padding-top: 167px;
+  text-align: left;
+}
+.metzgerei .logotext .text .butoni button {
+  background-color: #B50014;
+  width: 160px;
+  height: 45px;
+  border-radius: 25px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.metzgerei .logotext .text .butoni button p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.15s ease-in-out;
+  color: #fff;
+}
+.metzgerei .logotext .text .butoni button p:hover {
+  transform: scale(1.07);
+  transition: 0.15s ease-in-out;
+}
+
+@media (max-width: 920px) {
+  .metzgerei {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+  }
+  .metzgerei .logotext {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .metzgerei .logotext .logo {
+    flex: 1;
+    padding-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .metzgerei .logotext .logo img {
+    max-width: 100%;
+  }
+  .metzgerei .logotext .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    margin: 0;
+    flex: 1;
+    padding: 100px 0px 0px 0px;
+  }
+  .metzgerei .logotext .text .butoni {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+  }
+  .metzgerei .logotext .text .butoni p {
+    margin: 0;
+    padding-top: 0px;
+    text-align: center;
+  }
+  .metzgerei .logotext .text .butoni button {
+    background-color: #B50014;
+    color: #fff;
+    width: 160px;
+    height: 45px;
+    border-radius: 25px;
+    border: 1px solid white;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
+  .metzgerei .logotext .logo img {
+    max-width: 60%;
+  }
+  .metzgerei .logotext .text .butoni p {
+    font-size: 22px;
+    margin: 0;
+    padding-top: 0px;
+    text-align: center;
+  }
+  .metzgerei .logotext .text .butoni button p {
+    font-size: 14px;
+  }
+}

@@ -1,11 +1,9 @@
 const toggleBtn = document.querySelector('.toggle_btn')
 const toggleBtnIcon = document.querySelector('.toggle_btn i')
 const dropDown = document.querySelector('.drop_menu')
-const icon = document.getElementById("ikonica")
+const darkMode = document.querySelector('.dark')
+const content = document.getElementsByTagName('body')[0]
 
-icon.onclick =  () => {
-    document.body.classList.toggle(".dark-theme");
-}
 
 window.addEventListener("load", () => {
     setTimeout(function open(event) {
@@ -61,4 +59,9 @@ const swiperr = new Swiper('.swiper2', {
         modifier: 1,
 
     }
+});
+
+darkMode.addEventListener('click', function() {
+    darkMode.classList.toggle('active')
+    content.classList.toggle('night')
 });

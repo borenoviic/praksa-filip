@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+$font-family: Roboto;
+$font-size: 16px;
+$bg-color-crv: #B50014;
+$bg-color: #000000f0;
+$bg-color-day: #fff;
+$text-color-day: #fff;
+$text-color-night: #000;
+
+.footer {
+    .footer1 {
+        display: flex;
+        align-items: center;
+        height: 100px;
+        background-color: $bg-color-crv;
+
+        .logo {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .logo-img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        .info-glavni {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            justify-content: center;
+
+            .infoo {
+                text-align: left;
+
+                p {
+                    position: relative;
+                    color: $text-color-day;
+
+                    font-size: 12px;
+
+                    &::before {
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 5px;
+                        font-family: 'Font Awesome 5 Free';
+                        font-weight: 900;
+                    }
+
+                    &.fa-map-pin::before {
+                        content: '\f276';
+                    }
+
+                    &.fa-phone::before {
+                        content: '\f095';
+                    }
+
+                    &.fa-envelope::before {
+                        content: '\f0e0';
+                    }
+                }
+            }
+        }
+
+
+        .social-media {
+
+            flex: 1;
+            color: $text-color-day;
+
+            display: flex;
+            align-items: center;
+
+
+            p {
+                font-size: 14px;
+                padding-right: 10px;
+            }
+
+            .icons {
+                display: flex;
+                gap: 5px;
+
+                .fb,
+                .tw,
+                .ig,
+                .yt {
+                    border: 1px solid white;
+                    border-radius: 100%;
+                    padding: 0px;
+                    margin: 0;
+                    width: 30px;
+                    height: 30px;
+                    font-size: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    i {
+                        margin-left: 1px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .last-container {
+        background-color: #ff0000;
+        margin-top: 0px;
+
+        .last1 {
+            padding: 0px;
+            display: flex;
+            background-color: #000000ab;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            height: 20px;
+
+            .lastt {
+                display: flex;
+                width: 80%;
+
+                .frst {
+                    display: flex;
+                    flex: 1;
+                    width: 350px;
+                    justify-content: left;
+
+                    .first {
+                        margin: 0;
+                        color: #999999;
+                        font-size: 11px;
+                    }
+                }
+
+                .scnd {
+                    display: flex;
+                    flex: 1;
+                    justify-content: right;
+
+                    .second {
+                        margin: 0;
+                        color: #999999;
+                        font-size: 11px
+                    }
+                }
+
+                .sec {
+                    color: #b6b6b6;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 810px) {
+    .footer {
+
+        .footer1 {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            background-color: $bg-color-crv;
+            flex-direction: column;
+            justify-content: center;
+
+            .logo {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .logo-img {
+                    width: 100px;
+                    height: 100px;
+                    padding: 30px 0px;
+                }
+            }
+
+            .info-glavni {
+                display: flex;
+                align-items: center;
+                flex: 1;
+                justify-content: center;
+
+                .infoo {
+                    text-align: center;
+
+                    p {
+                        position: relative;
+                        color: $text-color-day;
+                        font-size: 12px;
+
+                        &::before {
+                            display: inline-block;
+                            vertical-align: middle;
+                            margin-right: 5px;
+                            font-family: 'Font Awesome 5 Free';
+                            font-weight: 900;
+                        }
+
+                        &.fa-map-pin::before {
+                            content: '';
+                        }
+
+                        &.fa-phone::before {
+                            content: '';
+                        }
+
+                        &.fa-envelope::before {
+                            content: '';
+                        }
+                    }
+                }
+            }
+
+            .social-media {
+                flex: 1;
+                color: $text-color-day;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 5px;
+
+                p {
+                    font-size: 14px;
+                    padding: 0px 15px;
+                }
+
+                .icons {
+                    padding-bottom: 20px;
+
+                    .fb,
+                    .tw,
+                    .ig,
+                    .yt {
+                        border: 1px solid white;
+                        border-radius: 100%;
+                        padding: 0px;
+                        margin: 0;
+                        width: 30px;
+                        height: 30px;
+                        font-size: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        i {
+                            margin-left: 0px;
+                            margin-top: 1px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .last-container {
+            background-color: #ff0000;
+            margin-top: 0px;
+
+            .last1 {
+                padding: 0px;
+                display: flex;
+                background-color: #000000ab;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+
+                .lastt {
+                    display: flex;
+                    flex-direction: column;
+                    width: 80%;
+                    height: 100%;
+                    gap: 10px;
+                    padding: 20px;
+
+                    .frst {
+                        display: flex;
+                        width: 100%;
+                        justify-content: center;
+
+                        .first {
+                            margin: 0;
+                            color: #999999;
+                            font-size: 11px;
+                        }
+                    }
+
+                    .scnd {
+                        display: flex;
+
+                        justify-content: center;
+
+                        .second {
+                            margin: 0;
+                            color: #999999;
+                            font-size: 11px
+                        }
+                    }
+
+                    .sec {
+                        color: #b6b6b6;
+                    }
+                }
+            }
+        }
+    }
+}
