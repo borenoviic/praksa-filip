@@ -102,7 +102,7 @@ $text-color-night: #000;
     .dry-aged {
         display: flex;
         flex-direction: column-reverse;
-        padding-top: 50px;
+        padding: 0px;
 
         .ostalo {
             width: 100%;
@@ -158,9 +158,10 @@ $text-color-night: #000;
             display: flex;
             justify-content: center;
             margin: 0;
-
+            
             .slike {
                 #cetvrta {
+                    
                     width: 100%;
                     max-height: 400px;
                 }

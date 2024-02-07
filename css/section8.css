@@ -52,6 +52,9 @@ body.night .metzgerei .logotext .text .butoni button p {
   padding-top: 167px;
   text-align: left;
 }
+.metzgerei .logotext .text .butoni .metz-text {
+  max-width: 400px;
+}
 .metzgerei .logotext .text .butoni button {
   background-color: #B50014;
   width: 160px;
@@ -115,7 +118,7 @@ body.night .metzgerei .logotext .text .butoni button p {
   .metzgerei .logotext .text .butoni {
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 260px;
   }
   .metzgerei .logotext .text .butoni p {
     margin: 0;

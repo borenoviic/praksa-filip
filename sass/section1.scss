@@ -255,6 +255,7 @@ body.night {
             margin-right: auto;
             max-width: 100%;
             position: relative;
+            height: 200px;
             bottom: 0;
             color: $text-color-day;
             display: flex;
@@ -295,5 +296,15 @@ body.night {
                 }
             }
         }
-    }
+        .drop_menu {
+            
+            li {
+                padding: 12px;
+
+                a {
+                    font-size: 12px;
+                }
+            }
+        }
+    } 
 }

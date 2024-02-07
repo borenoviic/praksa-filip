@@ -35,6 +35,7 @@
 @media (max-width: 920px) {
   .handwerk {
     max-width: 365px;
+    padding-top: 50px;
   }
   .handwerk h2 {
     font-size: 25px;

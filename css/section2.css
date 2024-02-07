@@ -77,7 +77,7 @@
   .dry-aged {
     display: flex;
     flex-direction: column-reverse;
-    padding-top: 50px;
+    padding: 0px;
   }
   .dry-aged .ostalo {
     width: 100%;

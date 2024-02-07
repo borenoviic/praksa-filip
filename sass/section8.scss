@@ -80,6 +80,10 @@ body.night {
             }
 
             .butoni {
+                .metz-text{
+                    max-width: 400px;
+                }
+
                 button {
                     background-color: $bg-color-crv;
                     width: 160px;
@@ -152,8 +156,8 @@ body.night {
                 .butoni {
                     display: flex;
                     flex-direction: column;
-                    width: 250px;
-
+                    width: 260px;
+                    
                     p {
                         margin: 0;
                         padding-top: 0px;
@@ -192,12 +196,13 @@ body.night {
             .text {
 
                 .butoni {
-
+                    
                     p {
                         font-size: 22px;
                         margin: 0;
                         padding-top: 0px;
                         text-align: center;
+                        
                     }
 
                     button {

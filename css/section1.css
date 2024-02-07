@@ -200,6 +200,7 @@ body.night {
     margin-right: auto;
     max-width: 100%;
     position: relative;
+    height: 200px;
     bottom: 0;
     color: #fff;
     display: flex;
@@ -228,5 +229,11 @@ body.night {
 @media (max-width: 500px) {
   .slider .info-slider .sliderr .opis-naslov {
     max-width: 300px;
+  }
+  .slider .drop_menu li {
+    padding: 12px;
+  }
+  .slider .drop_menu li a {
+    font-size: 12px;
   }
 }
