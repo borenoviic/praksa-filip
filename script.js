@@ -28,6 +28,7 @@ document.querySelector('#close').addEventListener('click', () => {
 
 toggleBtn.onclick = function () {
     dropDown.classList.toggle('open');
+    toggleBtnIcon.classList.toggle('fa-times');
 }
 
 const swiper = new Swiper('.swiper1', {

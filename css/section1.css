@@ -169,7 +169,7 @@ body.night {
   }
   .slider .drop_menu li {
     display: block;
-    padding: 20px;
+    padding: 12px;
   }
   .slider .drop_menu li a {
     text-decoration: none;
@@ -231,9 +231,9 @@ body.night {
     max-width: 300px;
   }
   .slider .drop_menu li {
-    padding: 12px;
+    padding: 8px;
   }
   .slider .drop_menu li a {
-    font-size: 12px;
+    font-size: 14px;
   }
 }

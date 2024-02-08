@@ -30,3 +30,15 @@
   margin: 0 auto;
   padding: 10px 0px;
 }
+
+@media (max-width: 550px) {
+  .popup #close {
+    margin: 0px auto;
+    right: auto;
+    color: #fff;
+  }
+  .popup p {
+    margin-top: 15px;
+    font-size: 12px;
+  }
+}

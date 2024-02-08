@@ -40,3 +40,20 @@ $text-color-night: #000;
         padding: 10px 0px;
     }
 }
+
+@media (max-width: 550px) {
+    .popup {
+
+        #close {
+            margin: 0px auto;
+            
+            right: auto;
+            color: #fff;
+        }
+
+        p {
+            margin-top: 15px;
+            font-size: 12px;
+        }
+    }
+}

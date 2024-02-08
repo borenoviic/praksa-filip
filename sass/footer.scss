@@ -8,18 +8,21 @@ $text-color-day: #fff;
 $text-color-night: #000;
 
 .footer {
+    background-color: $bg-color-crv;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     .footer1 {
         display: flex;
         align-items: center;
         height: 100px;
-        background-color: $bg-color-crv;
-
+        width: 70%;
         .logo {
             flex: 1;
             display: flex;
             align-items: center;
             justify-content: center;
-
+            width: 100%;
             .logo-img {
                 width: 100px;
                 height: 100px;
@@ -30,8 +33,8 @@ $text-color-night: #000;
             display: flex;
             align-items: center;
             flex: 1;
-            justify-content: center;
-
+            justify-content: left;
+            width: 100%;
             .infoo {
                 text-align: left;
 
@@ -69,10 +72,10 @@ $text-color-night: #000;
 
             flex: 1;
             color: $text-color-day;
-
+            width: 100%;
             display: flex;
             align-items: center;
-
+            justify-content: right;
 
             p {
                 font-size: 14px;
@@ -100,6 +103,7 @@ $text-color-night: #000;
 
                     i {
                         margin-left: 1px;
+                        margin-top: 1px;
                     }
                 }
             }
@@ -110,7 +114,7 @@ $text-color-night: #000;
     .last-container {
         background-color: #ff0000;
         margin-top: 0px;
-
+        width: 100%;
         .last1 {
             padding: 0px;
             display: flex;
@@ -122,14 +126,13 @@ $text-color-night: #000;
 
             .lastt {
                 display: flex;
-                width: 80%;
+                width: 70%;
 
                 .frst {
                     display: flex;
                     flex: 1;
-                    width: 350px;
+                    width: 100%;
                     justify-content: left;
-
                     .first {
                         margin: 0;
                         color: #999999;
@@ -140,8 +143,9 @@ $text-color-night: #000;
                 .scnd {
                     display: flex;
                     flex: 1;
-                    justify-content: right;
+                    width: 100%;
 
+                    justify-content: right;
                     .second {
                         margin: 0;
                         color: #999999;
@@ -157,7 +161,39 @@ $text-color-night: #000;
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1240px) {
+    .footer{
+        .footer1{
+            .info-glavni{
+                .infoo{
+                    p{
+                        font-size: 11px;
+                    }
+                }
+            }
+            .social-media{
+                p{
+                    text-wrap: nowrap;
+                    font-size: 12px;
+                }
+                .icons{
+                    .fb,.tw,.yt, .ig{
+                        width: 20px;
+                        height: 20px;
+                        i{
+                            font-size: 14px;
+                            margin-top: 0px;
+                            margin-left: 0px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 980px) {
     .footer {
 
         .footer1 {
@@ -243,7 +279,7 @@ $text-color-night: #000;
                         border: 1px solid white;
                         border-radius: 100%;
                         padding: 0px;
-                        margin: 0;
+                        margin-top: 0;
                         width: 40px;
                         height: 40px;
                         font-size: 20px;
