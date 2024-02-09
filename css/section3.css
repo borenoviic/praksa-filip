@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 .buchen {
   position: relative;
@@ -82,9 +83,10 @@
     align-items: center;
   }
   .buchen .lista .list1 h2 {
-    font-size: 25px;
+    font-size: 27px;
     text-align: center;
     margin-top: 100px;
+    margin-bottom: 60px;
   }
   .buchen .lista .list1 ul {
     display: flex;
@@ -93,12 +95,21 @@
     text-align: center;
     margin: 0;
     max-width: 300px;
+    padding: 0;
   }
   .buchen .lista .list1 ul li {
-    list-style: circle;
     max-width: 100%;
     text-align: center;
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+  .buchen .lista .list1 ul li::before {
+    content: "•";
+    margin-right: 10px;
+    font-size: 20px;
   }
   .buchen .lista .list1 button {
     background-color: #fff;

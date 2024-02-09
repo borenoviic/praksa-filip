@@ -73,7 +73,7 @@
 .footer .footer1 .social-media .icons .tw,
 .footer .footer1 .social-media .icons .ig,
 .footer .footer1 .social-media .icons .yt {
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 100%;
   padding: 0px;
   margin: 0;
@@ -132,10 +132,12 @@
   font-size: 11px;
 }
 .footer .last-container .last1 .lastt .sec {
+  font-style: italic;
+  padding-left: 3px;
   color: #b6b6b6;
 }
 
-@media (max-width: 1240px) {
+@media (max-width: 1270px) {
   .footer .footer1 .info-glavni .infoo p {
     font-size: 11px;
   }
@@ -153,7 +155,7 @@
     margin-left: 0px;
   }
 }
-@media (max-width: 980px) {
+@media (max-width: 1000px) {
   .footer .footer1 {
     display: flex;
     align-items: center;
@@ -221,10 +223,9 @@
     padding-bottom: 25px;
   }
   .footer .footer1 .social-media .icons .fb,
-  .footer .footer1 .social-media .icons .tw,
   .footer .footer1 .social-media .icons .ig,
   .footer .footer1 .social-media .icons .yt {
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 100%;
     padding: 0px;
     margin-top: 0;
@@ -236,11 +237,27 @@
     align-items: center;
   }
   .footer .footer1 .social-media .icons .fb i,
-  .footer .footer1 .social-media .icons .tw i,
   .footer .footer1 .social-media .icons .ig i,
   .footer .footer1 .social-media .icons .yt i {
     font-size: 26px;
     margin-left: 0px;
+    margin-top: 0px;
+  }
+  .footer .footer1 .social-media .icons .tw {
+    border: 2px solid white;
+    border-radius: 100%;
+    padding: 0px;
+    margin-top: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .footer1 .social-media .icons .tw i {
+    font-size: 26px;
+    margin-left: 2px;
     margin-top: 1px;
   }
   .footer .last-container {
@@ -261,7 +278,7 @@
     flex-direction: column;
     width: 80%;
     height: 100%;
-    gap: 10px;
+    gap: 15px;
     padding: 20px;
   }
   .footer .last-container .last1 .lastt .frst {
